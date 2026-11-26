@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Drop shadow under wallet (offset +3 down-right, ~10% opacity) -->
+    <path
+        android:fillColor="#18000000"
+        android:pathData="M31,45 L79,45 Q87,45 87,53 L87,81 Q87,89 79,89 L31,89 Q23,89 23,81 L23,53 Q23,45 31,45 Z" />
+
+    <!-- ── WALLET BODY (white rounded rectangle) ─────────────────────────── -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M28,42 L76,42 Q84,42 84,50 L84,78 Q84,86 76,86 L28,86 Q20,86 20,78 L20,50 Q20,42 28,42 Z" />
+
+    <!-- Wallet clasp tab at top center -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M38,34 L62,34 Q66,34 66,38 L66,42 L34,42 L34,38 Q34,34 38,34 Z" />
+
+    <!-- ── CARD SLOT (upper half of wallet, soft indigo tint) ─────────────── -->
+    <path
+        android:fillColor="#E8EAF6"
+        android:pathData="M28,42 L76,42 Q84,42 84,50 L84,62 L20,62 L20,50 Q20,42 28,42 Z" />
+
+    <!-- Card inside slot (indigo 100) -->
+    <path
+        android:fillColor="#C5CAE9"
+        android:pathData="M26,48 L68,48 Q71,48 71,51 L71,57 Q71,60 68,60 L26,60 Q23,60 23,57 L23,51 Q23,48 26,48 Z" />
+
+    <!-- Card chip (small metallic rectangle) -->
+    <path
+        android:fillColor="#9FA8DA"
+        android:pathData="M30,50 L38,50 Q40,50 40,52 L40,56 Q40,58 38,58 L30,58 Q28,58 28,56 L28,52 Q28,50 30,50 Z" />
+
+    <!-- ── DIVIDER between card slot and bill area ─────────────────────────── -->
+    <path
+        android:fillColor="#9FA8DA"
+        android:pathData="M20,62 L84,62 L84,64 L20,64 Z" />
+
+    <!-- ── COIN in bill area (lower right of wallet) ─────────────────────── -->
+    <path
+        android:fillColor="#E8EAF6"
+        android:pathData="M68,74 m-9,0 a9,9 0 1,0 18,0 a9,9 0 1,0 -18,0 Z" />
+
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#9FA8DA"
+        android:strokeWidth="1.5"
+        android:pathData="M68,74 m-9,0 a9,9 0 1,0 18,0 a9,9 0 1,0 -18,0 Z" />
+
+    <!-- Euro symbol (two horizontal bars on coin) -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#7986CB"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:pathData="M62,72 L69,72 M62,76 L69,76" />
+
+    <!-- ── PLUS BADGE (bright green circle, top-right corner) ─────────────── -->
+    <!-- Badge circle: Material Green 800 -->
+    <path
+        android:fillColor="#2E7D32"
+        android:pathData="M76,32 m-14,0 a14,14 0 1,0 28,0 a14,14 0 1,0 -28,0 Z" />
+
+    <!-- Badge inner highlight (subtle lighter arc, top-left of circle) -->
+    <path
+        android:fillColor="#14FFFFFF"
+        android:pathData="M76,18 Q90,18 90,32 Q84,20 76,18 Z" />
+
+    <!-- Plus sign: vertical bar -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M73.5,21 L78.5,21 L78.5,43 L73.5,43 Z" />
+
+    <!-- Plus sign: horizontal bar -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M65,29.5 L65,34.5 L87,34.5 L87,29.5 Z" />
+
+</vector>

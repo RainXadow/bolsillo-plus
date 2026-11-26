@@ -1,0 +1,31 @@
+*.iml
+.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+
+# ── Artefactos de release (binarios firmados — nunca versionar) ──────────────
+*.aab
+*.apk
+app/release/
+
+# ── Caché de Gradle (regenerado automáticamente, ya en .gitignore arriba) ────
+.gradle/
+
+# ── Android Studio — archivos de sesión volátiles ────────────────────────────
+.idea/androidTestResultsUserPreferences.xml
+.idea/deploymentTargetSelector.xml
+.idea/markdown.xml
+
+# ── Claude Code — configuración local de sesión ───────────────────────────────
+.claude/settings.local.json

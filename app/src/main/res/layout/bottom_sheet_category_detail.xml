@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!-- ── Cabecera: color + nombre + botones de acción ─────────────────────── -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="16dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="8dp">
+
+        <!-- Nombre e indicador de color -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="12dp">
+
+            <View
+                android:id="@+id/view_detail_color"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/circle_color_indicator"
+                android:layout_marginEnd="10dp" />
+
+            <TextView
+                android:id="@+id/tv_detail_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_primary" />
+
+        </LinearLayout>
+
+        <!-- Botones de acción: Renombrar | Eliminar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="6dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_rename_category"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="6dp"
+                android:text="Renombrar"
+                android:textSize="13sp"
+                style="@style/Widget.Material3.Button.OutlinedButton" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_delete_category"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="6dp"
+                android:text="Eliminar"
+                android:textSize="13sp"
+                android:textColor="@color/danger_text"
+                app:strokeColor="@color/danger_text"
+                app:rippleColor="#20D32F2F"
+                style="@style/Widget.Material3.Button.OutlinedButton" />
+
+        </LinearLayout>
+
+        <!-- Botón para reasignar en bloque todos los movimientos a otra categoría -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_reassign_all"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mover todos a otra categoría..."
+            android:textSize="13sp"
+            app:icon="@android:drawable/ic_menu_sort_by_size"
+            style="@style/Widget.Material3.Button.OutlinedButton" />
+
+        <!-- Botón para añadir subcategoría (visible solo para categorías root) -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_add_subcategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="+ Añadir subcategoría"
+            android:textSize="13sp"
+            android:visibility="gone"
+            style="@style/Widget.Material3.Button.OutlinedButton" />
+
+    </LinearLayout>
+
+    <!-- ── Tabs: Movimientos | Automatizaciones ─────────────────────────────── -->
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabMode="fixed"
+        app:tabGravity="fill" />
+
+    <!-- ── Contenido: una vista se muestra a la vez ──────────────────────────── -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="380dp">
+
+        <!-- Tab 0: movimientos de esta categoría -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_detail_transactions"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp"
+            android:clipToPadding="false" />
+
+        <!-- Tab 1: reglas de automatización -->
+        <LinearLayout
+            android:id="@+id/ll_rules_section"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Los cobros cuyo nombre contenga estos patrones se categorizarán automáticamente."
+                android:textSize="12sp"
+                android:textColor="@color/text_secondary"
+                android:paddingHorizontal="12dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="4dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_detail_rules"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:padding="4dp"
+                android:clipToPadding="false" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_add_rule"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="+ Añadir patrón de cobro"
+                android:layout_margin="12dp"
+                style="@style/Widget.Material3.Button.OutlinedButton" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

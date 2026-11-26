@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    android:gravity="center_vertical">
+
+    <!-- Concepto y fecha -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_mini_concept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/text_concept"
+            android:maxLines="1"
+            android:ellipsize="end" />
+
+        <TextView
+            android:id="@+id/tv_mini_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="11sp"
+            android:textColor="@color/text_date"
+            android:layout_marginTop="2dp" />
+
+        <!-- Fuente de la categoría: Manual / Automático / sin info -->
+        <TextView
+            android:id="@+id/tv_mini_source"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:layout_marginTop="2dp" />
+
+        <!-- Badge subcategoría: visible cuando la tx pertenece a un hijo y se ve desde el padre -->
+        <TextView
+            android:id="@+id/tv_subcat_badge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:textColor="@color/text_secondary"
+            android:layout_marginTop="2dp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <!-- Importe -->
+    <TextView
+        android:id="@+id/tv_mini_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginStart="8dp" />
+
+    <!-- Indicador de que el ítem es tappeable para recategorizar -->
+    <ImageView
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:src="@android:drawable/ic_menu_edit"
+        android:alpha="0.3"
+        android:layout_marginStart="6dp"
+        android:contentDescription="Toca para cambiar categoría" />
+
+    <!-- Badge de conflicto: visible si candidateRuleCount > 1 -->
+    <TextView
+        android:id="@+id/tv_mini_conflict_badge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="⚠"
+        android:textSize="12sp"
+        android:textColor="@color/conflict_amber"
+        android:layout_marginStart="4dp"
+        android:visibility="gone" />
+
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Filter/block icon placeholder -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="180dp"
+    android:height="180dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <!-- Funnel / filter shape -->
+    <path
+        android:fillColor="?attr/colorPrimary"
+        android:pathData="M10,18h4v-2h-4v2zM3,6v2h18V6H3zM6,13h12v-2H6v2z" />
+    <!-- Block circle -->
+    <path
+        android:fillColor="#E15759"
+        android:pathData="M19,13c-2.76,0 -5,2.24 -5,5s2.24,5 5,5 5,-2.24 5,-5 -2.24,-5 -5,-5z
+                          M17,20v-1.5h4V20H17z" />
+</vector>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ── Fondos (modo oscuro) ─────────────────────────────────────────── -->
+    <color name="bg_main">#0F1117</color>          <!-- Fondo principal oscuro profundo -->
+    <color name="bg_surface_var">#1A1A2A</color>   <!-- Variante superficie oscura -->
+
+    <!-- ── Textos (modo oscuro) ─────────────────────────────────────────── -->
+    <color name="text_primary">#E8E8F0</color>
+    <color name="text_secondary">#AAAABC</color>
+    <color name="text_hint">#888899</color>
+    <color name="text_date">#888888</color>
+    <color name="text_concept">#E0E0F0</color>
+    <color name="text_picker">#BBBBCC</color>
+    <color name="text_rule_type">#AAAAAA</color>
+    <color name="text_separator">#555555</color>
+    <color name="arrow_indicator">#666666</color>
+    <color name="divider">#2A2A3A</color>
+
+    <!-- ── Tarjeta Ingresos (oscuro) ─────────────────────────────────── -->
+    <color name="income_bg">#1A2E1D</color>
+    <color name="income_label">#81C784</color>
+    <color name="income_amount">#A5D6A7</color>
+
+    <!-- ── Tarjeta Gastos (oscuro) ───────────────────────────────────── -->
+    <color name="expense_bg">#2E1A1A</color>
+    <color name="expense_label">#EF9A9A</color>
+    <color name="expense_amount">#FFCDD2</color>
+
+    <!-- ── Tarjeta Balance (oscuro) ──────────────────────────────────── -->
+    <color name="balance_bg">#1A2535</color>
+    <color name="balance_label">#90CAF9</color>
+    <color name="balance_amount">#BBDEFB</color>
+
+    <!-- ── Badges y alertas (oscuro) ─────────────────────────────────── -->
+    <color name="cat_badge_bg">#1976D2</color>
+    <color name="cat_badge_text">#FFFFFF</color>
+    <color name="conflict_warn">#FFA000</color>
+    <color name="conflict_amber">#FFB74D</color>
+    <color name="priority_color">#FFB74D</color>
+    <color name="danger_text">#EF5350</color>
+
+</resources>

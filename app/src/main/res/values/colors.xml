@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- ── Fondos ───────────────────────────────────────────────────────────── -->
+    <color name="bg_main">#F0F2F5</color>          <!-- CoordinatorLayout / fondo principal -->
+    <color name="bg_surface_var">#F5F5F5</color>   <!-- ScrollView Statistics, variante -->
+
+    <!-- ── Textos ────────────────────────────────────────────────────────────── -->
+    <color name="text_primary">#1A1A1A</color>     <!-- Títulos, nombres, textos principales -->
+    <color name="text_secondary">#757575</color>   <!-- Subtítulos, conteos, labels menores -->
+    <color name="text_hint">#9E9E9E</color>        <!-- Placeholders, estados vacíos -->
+    <color name="text_date">#999999</color>        <!-- Fecha en items de transacción -->
+    <color name="text_concept">#1A1A1A</color>     <!-- Concepto de transacción -->
+    <color name="text_picker">#555555</color>      <!-- Concepto en CategoryPickerBottomSheet -->
+    <color name="text_rule_type">#777777</color>   <!-- Tipo de regla (Exacta/Frase/...) -->
+    <color name="text_separator">#BBBBBB</color>   <!-- Punto separador · en item_rule -->
+    <color name="arrow_indicator">#BDBDBD</color>  <!-- Flecha › en item_category -->
+    <color name="divider">#EEEEEE</color>          <!-- Líneas divisoras -->
+
+    <!-- ── Tarjeta Ingresos ───────────────────────────────────────────────── -->
+    <color name="income_bg">#E8F5E9</color>
+    <color name="income_label">#2E7D32</color>
+    <color name="income_amount">#1B5E20</color>
+
+    <!-- ── Tarjeta Gastos ────────────────────────────────────────────────── -->
+    <color name="expense_bg">#FFEBEE</color>
+    <color name="expense_label">#C62828</color>
+    <color name="expense_amount">#B71C1C</color>
+
+    <!-- ── Tarjeta Balance ───────────────────────────────────────────────── -->
+    <color name="balance_bg">#E3F2FD</color>
+    <color name="balance_label">#1565C0</color>
+    <color name="balance_amount">#0D47A1</color>
+
+    <!-- ── Badges y alertas ──────────────────────────────────────────────── -->
+    <color name="cat_badge_bg">#2196F3</color>     <!-- Fondo badge de categoría -->
+    <color name="cat_badge_text">#FFFFFF</color>   <!-- Texto badge de categoría -->
+    <color name="conflict_warn">#FF6F00</color>    <!-- ⚠ en item_transaction -->
+    <color name="conflict_amber">#FFA000</color>   <!-- ⚠ en item_mini_transaction -->
+    <color name="priority_color">#F57C00</color>   <!-- Prioridad de regla -->
+    <color name="danger_text">#D32F2F</color>      <!-- Botón Eliminar (texto + borde) -->
+
+</resources>

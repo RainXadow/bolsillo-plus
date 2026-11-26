@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <!-- Descripción -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Texto a buscar en el nombre del cobro:"
+        android:textSize="13sp"
+        android:textColor="#444444"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Campo del patrón -->
+    <EditText
+        android:id="@+id/et_rule_pattern"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ej: amazon, gadis, netflix"
+        android:inputType="text"
+        android:singleLine="true"
+        android:background="@android:drawable/edit_text"
+        android:padding="10dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Tipo de coincidencia -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tipo de coincidencia:"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:layout_marginBottom="6dp" />
+
+    <RadioGroup
+        android:id="@+id/rg_match_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/rb_contains"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contiene (recomendado)"
+            android:textSize="14sp"
+            android:checked="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="    ej: &#39;amazon&#39; encontrará &#39;AMAZON.ES&#39;, &#39;Amazon Prime&#39;..."
+            android:textSize="11sp"
+            android:textColor="#777777"
+            android:layout_marginBottom="6dp" />
+
+        <RadioButton
+            android:id="@+id/rb_contains_word"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Palabra completa"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="    ej: &#39;prime&#39; encontrará &#39;Amazon Prime&#39; pero NO &#39;PRIMERO&#39;"
+            android:textSize="11sp"
+            android:textColor="#777777"
+            android:layout_marginBottom="6dp" />
+
+        <RadioButton
+            android:id="@+id/rb_exact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Exacta"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="    el nombre del cobro debe ser idéntico al patrón"
+            android:textSize="11sp"
+            android:textColor="#777777"
+            android:layout_marginBottom="6dp" />
+
+        <RadioButton
+            android:id="@+id/rb_regex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Expresión regular (avanzado)"
+            android:textSize="14sp" />
+
+    </RadioGroup>
+
+</LinearLayout>
